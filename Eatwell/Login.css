@@ -1,0 +1,76 @@
+body{   
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5)30%,rgba(0,0,0,0.5)40%),url(oshte.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+h1{
+    color:white
+}
+
+.form{
+    background-color:transparent ;
+    height: 41vh;
+    width: 18%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px;
+}
+.form:hover{
+    background-color: rgb(160, 157, 157);
+}
+h1{display: grid;
+    place-items: center;
+}
+#labelName{
+    font-size: 26px;
+    font-style: oblique;
+    display: grid;
+    margin: auto;
+    place-items: center;
+    text-align: center;
+}
+#labelPass{
+    font-size: 26px;
+    font-style: oblique;
+    display: grid;
+    margin: auto;
+    place-items: center;
+    text-align: center;
+}
+#tbName{
+    font-size: 19px;
+    font-style: oblique;
+    display: grid;
+    margin: auto;
+    place-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+.tbPass{
+    font-size: 19px;
+    font-style: oblique;
+    display: grid;
+    margin: auto;
+    place-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+#btn{
+    
+    font-size: 20px;
+   margin-left: 37%;
+   border-radius: 5px;
+}
+#btn:hover{
+    background-color:  rgb(160, 157, 157);
+}
+#pLog{
+    font-size: 18px;
+}
+

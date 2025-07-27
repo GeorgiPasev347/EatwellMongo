@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="Eatwell1.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+               <div class="icon">
+                   <h2 class="logo">EATWELL</h2>
+               </div>
+               <div class="menu">
+                   <ul>
+                       <li><a href="Eatwell1.html">HOME</a></li>
+                       <li><a href="Eatwell2.html">ABOUT</a></li>
+                       <li><a href="Eatwell3.html">PRODUCTS</a></li>
+                       <li><a href="Eatwell4.html">CONTACTS</a></li>
+                   </ul>
+               </div>
+               <form method="post" >
+        <div class="registerForm" >
+            <h2 class="h2Log">LOGIN FORM</h2>
+            <input type="text" class="email" name="username" placeholder="Enter Email here..." id="tb1">
+            <br><br>
+            <input type="text" class="password" name="password" placeholder="Enter Password here..." id="tb2">
+            <br>
+            <button class="log" onclick="Enter()" type="submit" id="tb11"><strong>LOG IN</button>
+            <p class="para">Dont have an account?  <a class="signlink" href="#">Sign In</a></p>
+        </div>
+    </form>
+       </div>
+       <div class="content">
+           <h1>EATWELL PRODUCTS AND COMPANY</h1>
+           <p class="par">-DO YOU WANT BEST QUALITY FOOD?<br>-ARE YOU READY TO TASTE OUR FLAVORS?<br>- OUR FOOD QUALITY IS<br> RATED TOP 20 IN THE WORLD?<br>-WE DO OFFER BEST FOOD<br>-WANT TO LEARN MORE?<br>GO TO <a id="aboutlink" href="Eatwell2.html">ABOUT</a> PAGE  </p>
+       </div> 
+         <script>
+     document.getElementById('registerForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const data = {
+        username: formData.get('username'),
+        password: formData.get('password')
+      };
+
+      const response = await fetch('/register', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+      alert(result.message);
+    });
+</script>
+</body>
+</html>

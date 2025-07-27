@@ -1,0 +1,105 @@
+body{
+    background-image: url(oshte.png);
+    background-size: cover;
+    background-position: center;
+    
+    }
+    .main{
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(img1.jfif);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+    .navbar{
+        width: 1200px;
+        height: 75px;
+        margin:auto
+    }
+    .icon{
+        width: 200px;
+        float:left;
+        height: 75px;
+    }
+    .logo{
+        color:#ffffff;
+        font-size: 35px;
+        font-family: Arial;
+        padding-left: 20px;
+        float:left;
+        padding-top: 10px;
+        
+    }
+    .menu{
+        
+        width: 400px;
+        float: left;
+        height: 70px;
+    
+    }
+    ul{
+        float: left; 
+         display:flex;
+         justify-content: center;
+         align-items: center;
+         
+     }
+     
+     ul li{
+         list-style: none;
+         margin-left:62px ;
+         margin-top:27px ;
+         font-size: 18px;
+         
+     }
+     ul li a{
+         
+         text-decoration: none;
+         color: antiquewhite;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         font-weight: bold;
+         transition: 0.3s ease-in-out;
+     }
+     ul li a:hover{
+        color: #00fbd5;
+    }
+    .content{
+        margin-top: 200px;
+        width: 1200px;
+        height: auto;
+        margin:auto;
+        margin-top: 20px;
+        color:#fff;
+        position: relative;
+    }
+    .form{
+        width: 400px;
+        height: 450px;
+        background-color:#3a206974;
+        position: absolute;
+        top:20%;
+        left: 800px;
+        border-radius: 20px;
+        padding: 10px;
+        margin-right: 20px;
+    }
+    .par{
+        font-size: 25px;
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 1.5px;
+        line-height: 30px;
+    }
+    .cn{
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        width: 120px;
+        height: 40px;
+        background: white;
+        border: none;
+        border-radius: 10px;
+    }
+    .cn:hover{
+background-color: grey;
+    }
